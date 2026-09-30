@@ -909,3 +909,12 @@ with st.expander(
 st.caption(
     "Mango FPO AI Decision Support System — Research Prototype"
 )
+st.markdown(
+    """
+    <div style="text-align: center; padding: 30px 0 10px 0; color: #777; font-size: 13px;">
+        <strong>Made by Anuj Goyal</strong><br>
+        Integrated M.Tech Artificial Intelligence | VIT Bhopal University
+    </div>
+    """,
+    unsafe_allow_html=True
+)
