@@ -1,21 +1,107 @@
-# Mango FPO AI Decision Support System
+# 🥭 Mango FPO AI Decision Support System
 
-AI-Based Decision Support System for Mango Farmer Producer Organizations (FPOs).
+> **AI/ML-based market-price forecasting and decision-support prototype for Mango Farmer Producer Organizations (FPOs)**
 
-This is a runnable MVP/prototype. It includes a Streamlit dashboard, a demo dataset, and a Random Forest price-prediction model. The demo dataset is SYNTHETIC and must be replaced with verified real mango data before academic results are reported.
+The **Mango FPO AI Decision Support System** is an academic/research prototype designed to support market-oriented decision-making for Mango Farmer Producer Organizations.
 
-## Run on Mac
-```bash
-cd mango_fpo_ai_dss
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/generate_demo_data.py
-python src/train_model.py
-streamlit run app.py
-```
+The system processes historical and current Mango market-price observations, performs data cleaning and feature engineering, trains machine learning models, predicts the **next observed market-reporting price**, and converts the prediction into transparent revenue scenarios based on FPO-entered quantity, transport cost, and storage cost.
 
-The dashboard includes price prediction, market comparison, revenue estimation, and a transparent decision-support message.
+---
 
-## Final-project direction
-Replace demo data with verified official data; add time-aware validation, model comparison, weather/production integration, transport/storage costs, explainability, testing, deployment and research documentation.
+## 📌 Project Overview
+
+Mango Farmer Producer Organizations operate in an environment where market prices can vary across:
+
+- Markets
+- States
+- Districts
+- Mango varieties
+- Reporting dates
+- Market conditions
+
+A practical decision-support system can help an FPO understand the available market information and estimate potential revenue under different assumptions.
+
+This project develops a prototype that combines:
+
+- Market-data processing
+- Exploratory data analysis
+- Time-aware feature engineering
+- Machine learning regression
+- Price prediction
+- Revenue scenario calculation
+- Market scenario analysis
+- Interactive visualization
+
+The current implementation focuses primarily on **Mango market-price forecasting and FPO revenue scenario analysis**.
+
+---
+
+# 🎯 Problem Statement
+
+Mango FPOs may need to answer questions such as:
+
+1. What is the latest observed Mango market price?
+2. What price does the model estimate for the next observed market report?
+3. How much has the predicted price changed?
+4. What revenue could be generated for a given Mango quantity?
+5. How does transport cost affect estimated revenue?
+6. How does storage cost affect estimated revenue?
+7. How do recent market-level scenarios compare?
+
+Traditional market information may provide historical observations, but it does not directly convert those observations into a simple decision-support interface.
+
+This project attempts to bridge that gap using machine learning and transparent scenario calculations.
+
+---
+
+# 💡 Proposed Solution
+
+The system follows a complete data-to-decision pipeline:
+
+```text
+Mango Market Data
+       │
+       ▼
+Data Extraction
+       │
+       ▼
+Data Cleaning & Validation
+       │
+       ▼
+Exploratory Data Analysis
+       │
+       ▼
+Feature Engineering
+       │
+       ▼
+Machine Learning Models
+       │
+       ├───────────────┐
+       │               │
+       ▼               ▼
+Random Forest       XGBoost
+       │               │
+       └───────┬───────┘
+               ▼
+       Model Evaluation
+               │
+               ▼
+       Price Prediction
+               │
+               ▼
+    FPO Decision Support
+               │
+       ┌───────┼────────┐
+       │       │        │
+       ▼       ▼        ▼
+   Quantity Transport Storage
+       │       │        │
+       └───────┼────────┘
+               ▼
+       Revenue Scenarios
+               │
+               ▼
+      Market Comparison
+               │
+               ▼
+      Streamlit Dashboard
