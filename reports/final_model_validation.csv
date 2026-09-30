@@ -1,0 +1,4 @@
+Model,MAE,RMSE,R2
+Baseline - Today's Price,283.1129,625.1983,0.843
+Random Forest,343.8937,613.5738,0.8487
+XGBoost,339.7733,605.0685,0.8529

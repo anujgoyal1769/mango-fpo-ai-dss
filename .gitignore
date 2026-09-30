@@ -1,0 +1,18 @@
+# Large/raw downloaded data
+data/raw/
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Streamlit secrets
+.streamlit/secrets.toml

@@ -1,0 +1,21 @@
+feature,importance
+numeric__modal_price,0.4663507
+numeric__lag_1_price,0.038559902
+numeric__year,0.03612872
+numeric__rolling_mean_3,0.024308259
+numeric__rolling_mean_7,0.022311531
+categorical__district_Ganganagar,0.020962002
+categorical__variety_Dusheri,0.01229391
+categorical__district_Ludhiana,0.01178507
+numeric__min_price,0.0103712585
+categorical__district_Bharuch,0.006707285
+numeric__week_of_year,0.006460754
+numeric__max_price,0.0063620694
+categorical__market_Sriganganagar (F&V),0.0062683495
+categorical__market_Banur,0.0057606497
+categorical__variety_Badami,0.005556211
+categorical__market_Jodhpur (F&V),0.005534771
+numeric__day_of_year,0.0053622494
+categorical__variety_Langra,0.0053333924
+categorical__district_Mohali,0.0052930694
+categorical__market_Bharuch,0.004892664
