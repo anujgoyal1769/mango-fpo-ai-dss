@@ -105,3 +105,21 @@ Random Forest       XGBoost
                │
                ▼
       Streamlit Dashboard
+ ---
+
+## System Architecture
+
+The Mango FPO AI Decision Support System follows a three-layer architecture covering data processing, machine learning, and decision support.
+
+![System Architecture](docs/system_architecture.png)
+
+### Architecture Layers
+
+**1. Data Layer**  
+Historical and current Mango market-price data are extracted, cleaned, validated, and prepared for analysis.
+
+**2. AI/ML Layer**  
+Exploratory Data Analysis (EDA), feature engineering, Random Forest, and XGBoost are used to generate the next observed market-price prediction.
+
+**3. Decision Support & Application Layer**  
+FPO-entered quantity, transport cost, and storage cost are used for revenue scenario analysis and market comparison through the Streamlit dashboard.     
