@@ -4,3 +4,4 @@ scikit-learn>=1.5
 streamlit>=1.38
 plotly>=5.24
 joblib>=1.4
+xgboost
